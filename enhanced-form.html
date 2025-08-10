@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--The main layout of the fundraising events page using semantic HTML5 elements. -->
+<html lang="en">
+  
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-widtth,initial-scale=1.0"
+        <title>Hope & Hands Community Fundraiser 2025</title>
+     </head>
+<!-- Fundraising goals (unordered list) and participant steps (ordered list) -->
+ <br>
+<body>
+    <h2> About our Fundraising</h2>
+    <ul>
+        <li>Raising funds for community projects</li>
+        <li>Bring local business together</li>
+        <li>Promote volunteerism</li>
+    </ul>
+    <ol>
+        <li>Register online</li>
+        <li>Attend the events</li>
+        <li>Share the cause with friends</li>
+    </ol>
+    <br> 
+<!--Events Schedule in a table for a clear of times, activities, and locations -->
+    <h2>Event Schedule</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>Main Hall</td>
+            </tr>
+            <tr>
+                <td>12:00 AM</td>
+                <td>Charity Auctions</td>
+                <td>Garden Area</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Media gallery showcasing event images and video with captions for content -->
+<h2>Media Galley</h2>
+<img src="Funds.image.jpg" alt="Fundraising events Team members" width="600" height="500">
+<br> <br> <br>
+
+<video width="600" height="500" controls>
+    <source src="Funds.video.mp4" type=""video/mp4">
+    Your browser does not support the video tag.
+</video>
+<br> 
+<!-- Registration form colleting attendee details, using HTML5 validations attributes -->
+ <h2> Register for Events</h2>
+ <form action="/submit" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="enter your name here..." required">
+    <br /> <br/>
+
+    <label for="Email">Email</label>
+    <input type="text" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="enter your valid email here..." required autocomplete="email">
+    <br /> <br />
+    <label for="phone number">Phone</label>
+    <input type="text" id="phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="enter your phone number..." required>
+     <br /> <br />
+     <label for="EventNumber">Your Event Number</label>
+     <input type="text" id="Event Number" value="12345678" readonly>
+     <br/> <br />
+     </label>
+                <textarea id="message" name="message" required minlength="30">
+                </textarea>
+                <p class="error" id="message-error">Please enter a message of at least 30 characters.</p>
+
+                <input type="submit" value="Register">
+
+     </form>
+
+</body>
+</html>
